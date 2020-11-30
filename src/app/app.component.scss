@@ -1,53 +1,58 @@
-@font-face {
-    font-family: 'Lalezar-Font';
-    src: url(../assets/Fonts/Lalezar-Font/TTF/Lalezar-Regular.ttf) format('truetype');
-}
-
-img {
-    width: 100%;
-    height: 625px;
-}
-
-.logo {
-    left: 48%;
-    top: 120px;
-    font-family: 'Lalezar-Font';
-    text-align: center;
-}
-
-.login_box {
-    top: 42%;
-    left: 28%;
-    border-radius: 5px;
-    opacity: .8;
-    height: 130px;
-    width: 44%;
-}
-
-.login_box input {
-    text-align: right;
-    border: none;
-    border-bottom: 1px solid white;
-    width: 81%;
-    margin: 40px 50px 60px 60px;
-}
-
-.login_box button {
-    width: 100%;
-    height: 50px;
-    border-radius: 0px 0px 5px 5px;
-    font-family: 'Lalezar-Font';
-}
-
-.btn_recoveryPASS button {
-    margin-top: 56px;
-    border-radius: 0px 0px 10px 10px;
-    height: 45px;
-}
-
-.footer_link {
-    top: 71%;
-    left: 42%;
-    text-align: center;
-    font-family: 'Lalezar-Font';
-}
+    @font-face {
+        font-family: 'Lalezar-Font';
+        src: url(../assets/Fonts/Lalezar-Font/TTF/Lalezar-Regular.ttf) format('truetype');
+    }
+    
+    .changePIC img {
+        width: 100%;
+        height: 625px;
+        position: absolute;
+    }
+    
+    .prevIMG {
+        z-index: 231;
+    }
+    
+    .logo {
+        left: 48%;
+        top: 120px;
+        font-family: 'Lalezar-Font';
+        text-align: center;
+    }
+    
+    .login_box {
+        top: 42%;
+        left: 28%;
+        border-radius: 5px;
+        opacity: .8;
+        height: 130px;
+        width: 44%;
+    }
+    
+    .login_box input {
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid white;
+        width: 81%;
+        margin: 40px 50px 60px 60px;
+    }
+    
+    .login_box button {
+        width: 100%;
+        height: 50px;
+        border-radius: 0px 0px 5px 5px;
+        font-family: 'Lalezar-Font';
+    }
+    
+    .btn_recoveryPASS button {
+        margin-top: 56px;
+        border-radius: 0px 0px 10px 10px;
+        height: 45px;
+    }
+    
+    .footer_link {
+        top: 71%;
+        left: 42%;
+        text-align: center;
+        font-family: 'Lalezar-Font';
+    }
