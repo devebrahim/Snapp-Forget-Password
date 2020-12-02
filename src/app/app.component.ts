@@ -7,12 +7,15 @@ import { Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'SnappForget-Password';
-  showSite:number=1
+  showSite:string="none"
+  showSiteroot:number=0
+  email:string=null
+  okemail:boolean=true
   
   constructor() {setTimeout(() => {
-    this.showSite = 0;
-  }, 2500);}
-  
+    this.showSite="hidden";this.showSiteroot=1;
+  }, 2000);}
 ngOnInit() {}
-
-}
+btnchangecolor(){
+  return this.email === "" ? "#a3a3a3" : "green";
+}}

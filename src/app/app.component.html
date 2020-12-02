@@ -1,21 +1,23 @@
-<div class="root">
-    <div class="changePIC">
-        <img src="../assets/img/1.jpg" alt="" class="backIMG">
-        <img src="../assets/img/preveiwSNAPP.jpg" alt="" class="prevIMG" [ngStyle]="{opacity: showSite}">
-    </div>
-
+<div class="changePIC">
+    <img src="../assets/img/1.jpg" alt="" class="backIMG">
+    <img src="../assets/img/preveiwSNAPP.jpg" alt="" class="prevIMG" [ngStyle]="{visibility: showSite}">
+</div>
+<div class="root" [ngStyle]="{opacity: showSiteroot}">
     <div class="logo position-absolute h-25 text-white">
         <h1> !اسنپ</h1>
         <h4>کسب و کار</h4>
+        <h4>{{email}}</h4>
     </div>
     <div class="login_box position-absolute bg-dark">
-        <input type="text" class="bg-dark text-secondary" placeholder="ایمیل">
-        <button class="bg-secondary text-white">بازیابی رمز عبور</button>
+        <input type="text" class="bg-dark text-secondary" placeholder="ایمیل" [(ngModel)]="email">
+        <button class="qqq" type="button" [ngStyle]="{'background-color':btnchangecolor()}" [ngClass]="{'qqq': okemail === true}">بازیابی رمز عبور</button>
     </div>
-    <div class="footer_link position-absolute">
-        <div class="col-12 h-25 m-1">
-            <a href="" class="text-white">حساب کاربری دارید؟ وارد شوید.</a></div>
-        <div class="col-12 h-25 m-1">
-            <a href="" class="text-white">سوالات متداول!</a></div>
+    <div class="footer_link position-absolute ">
+        <div class="col-12 h-25 m-1 ">
+            <a href=" " class="text-white ">حساب کاربری دارید؟ وارد شوید.</a></div>
+        <div class="col-12 h-25 m-1 ">
+            <a href=" " class="text-white ">سوالات متداول!</a></div>
+        <h1>{{email}}</h1>
     </div>
+
 </div>
