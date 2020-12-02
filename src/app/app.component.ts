@@ -10,7 +10,6 @@ export class AppComponent implements OnInit{
   showSite:string="none"
   showSiteroot:number=0
   email:string=null
-  okemail:boolean=true
   
   constructor() {setTimeout(() => {
     this.showSite="hidden";this.showSiteroot=1;
